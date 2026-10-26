@@ -1,0 +1,135 @@
+/* All common parts starts header */
+
+*{
+    margin: 0;
+    padding: 0 ;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol{
+    list-style-type: none;
+}
+
+.container{
+    width: 1166px;
+    margin: 0 auto;
+}
+/* All common parts ends header */
+
+
+
+
+/* header part stats here */
+#header_part{
+    width: 100%;
+    /* background: #EEEDDE; */
+    padding: 50px 0;   
+    position: absolute;
+    z-index: 1;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 552px;
+   
+}
+.menu_button{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.menu_button a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color:#203239;
+}
+   
+/* header part ends here */
+
+/* banner part start here */
+#banner_part{
+    position: relative;
+    background: #EEEDDE;
+}
+
+.hero_text h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 90px;
+    color:#203239;
+    width: 777px;
+    padding-bottom: 24px;
+}
+.hero_text p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color:#203239;
+    width: 544px;
+    padding-bottom: 24px;
+}
+
+.banner{
+    display: flex;
+    padding-top:188px;
+    padding-bottom:120px;
+    gap: 16px;
+}
+.search_box{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+}
+
+.search_box i{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.search_box p{
+    padding: 22px 101px 24px 56px;
+    background: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color:#203239;
+    border-radius: 15px;
+}
+
+.search_box .search_button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color:#203239;
+    padding: 23px 41px;
+    background: #FFFFFF;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+/* banner part end here */
