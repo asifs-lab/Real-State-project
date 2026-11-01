@@ -97,7 +97,7 @@ ul,ol{
 .search_box i{
     position: absolute;
     left: 20px;
-    top: 50%;
+    top: 49%;
     transform: translateY(-50%);
 
 }
@@ -111,6 +111,9 @@ ul,ol{
     line-height: 30px;
     color:#203239;
     border-radius: 15px;
+}
+.search_place{
+  
 }
 
 .search_box .search_button{
@@ -175,7 +178,7 @@ ul,ol{
 }
 .upper_row .text3{
     margin-left: 33px;
-    margin-right: 132px;
+    margin-right: 84px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -198,6 +201,7 @@ ul,ol{
     display: flex;
     flex-direction: row;
     gap: 140px;
+    margin-bottom: 100px;
 }
 .card_one{
     border-radius: 10px;
@@ -206,12 +210,13 @@ ul,ol{
 .card_one:hover{
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
     transition: 0.4s;
-
 }
 
 .card_one .upper_row .number{
     margin-right: 19px;
 }
+
+
 .card_one h4{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
@@ -233,6 +238,82 @@ ul,ol{
 }
 
 .card_one h3 i{
+    margin-left: 8px;
+}
+
+.card_two{
+    border-radius: 10px;
+}
+
+.card_two:hover{
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+}
+
+.card_two .upper_row .number{
+    margin-right: 19px;
+}
+
+
+.card_two h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color:#203239;
+    width: 235px;
+    margin-bottom: 48px;
+    margin-left: 33px;
+    width: 235px;
+}
+
+.card_two h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#203239;
+    margin-left: 33px;
+    margin-bottom: 20px;
+}
+
+.card_two h3 i{
+    margin-left: 8px;
+}
+
+.card_three{
+    border-radius: 10px;
+}
+
+.card_three:hover{
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+}
+
+.card_three .upper_row .number{
+    margin-right: 19px;
+}
+
+
+.card_three h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color:#203239;
+    width: 235px;
+    margin-bottom: 48px;
+    margin-left: 33px;
+    width: 235px;
+}
+
+.card_three h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#203239;
+    margin-left: 33px;
+    margin-bottom: 20px;
+}
+
+.card_three h3 i{
     margin-left: 8px;
 }
 /* card section part end here */
@@ -344,32 +425,105 @@ ul,ol{
     color: #203239;
     transition: 0.4s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Residen Favorit part end here  */
 
+/* Residen Berbagai Kota start here */
+#Residen_Berbagai_Kota{
+    padding-top: 68px;
+}
+.Residen_Berbagai_Kota_content p {
+    padding-bottom: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#FF7527;
+}
+.Residen_Berbagai_Kota_content h2 {
+    padding-bottom: 64px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color:#203239;
+}
+.Residen_Berbagai_Kota_card_section {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.Residen_Berbagai_Kota_card_section .child01 img,
+.Residen_Berbagai_Kota_card_section .child02 img,
+.Residen_Berbagai_Kota_card_section .child03 img
+{
+    padding-bottom: 16px;
+}
+
+.Residen_Berbagai_Kota_card_section .child01 h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color:#203239;
+    padding-bottom: 8px;
+}
+
+.Residen_Berbagai_Kota_card_section .child01 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color:#203239;
+    line-height: 30px;
+    margin-bottom: 68px;
+}
+
+.Residen_Berbagai_Kota_card_section .child03 h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color:#203239;
+    padding-bottom: 8px;
+}
+
+.Residen_Berbagai_Kota_card_section .child03 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color:#203239;
+    line-height: 30px;
+    margin-bottom: 68px;
+}
+
+.Residen_Berbagai_Kota_card_section .child02 h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color:#203239;
+    padding-bottom: 8px;
+}
+
+.Residen_Berbagai_Kota_card_section .child02 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color:#203239;
+    line-height: 30px;
+    margin-bottom: 68px;
+}
 
 
 
 
 
-/* banner part start here */
-/* banner part end here */
+
+/* Residen Berbagai Kota end here */
+
+
+
+
+
+
+
+
+
 /* banner part start here */
 /* banner part end here */
 /* banner part start here */
