@@ -483,6 +483,7 @@ ul, ol{
     align-items: center;
 }
 
+
 .call_section .call01 .upper_call_part {
     display: flex;
     flex-direction: row;
@@ -509,6 +510,13 @@ ul, ol{
     color: #fff;
     font-weight: 600;
     border-radius: 6px;
+    border: 1px solid #203239;
+}
+.call_section .call01 .lower_call_part a:hover{
+    border: 1px solid #203239;
+    background: transparent;
+    color: #203239;
+    transition: 0.4s;
 }
 
 .callLogoFlex{
