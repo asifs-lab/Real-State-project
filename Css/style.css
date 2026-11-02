@@ -1,17 +1,16 @@
-/* All common parts starts header */
-
+/* All common parts starts here */
 *{
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     font-family: "Poppins", sans-serif;
 }
-
 
 a{
     text-decoration: none;
     color: inherit;
 }
-ul,ol{
+
+ul, ol{
     list-style-type: none;
 }
 
@@ -19,28 +18,24 @@ ul,ol{
     width: 1166px;
     margin: 0 auto;
 }
-/* All common parts ends header */
+/* All common parts ends here */
 
 
-
-
-/* header part stats here */
+/* header part starts here */
 #header_part{
     width: 100%;
-    /* background: #EEEDDE; */
-    padding: 50px 0;   
+    padding: 50px 0;
     position: absolute;
     z-index: 1;
 }
-
 
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 552px;
-   
 }
+
 .menu_button{
     display: flex;
     flex-direction: row;
@@ -48,15 +43,36 @@ ul,ol{
 }
 
 .menu_button a{
+    position: relative;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
+    transition: color 0.4s ease;
 }
-   
+
+.menu_button a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #FF7527;
+    transition: width 0.4s ease;
+}
+
+.menu_button a:hover{
+    color: #FF7527;
+}
+
+.menu_button a:hover::after{
+    width: 100%;
+}
 /* header part ends here */
 
-/* banner part start here */
+
+/* banner part starts here */
 #banner_part{
     position: relative;
     background: #EEEDDE;
@@ -67,26 +83,28 @@ ul,ol{
     font-weight: 600;
     font-size: 56px;
     line-height: 150%;
-    color:#203239;
+    color: #203239;
     width: 777px;
     margin-bottom: 24px;
 }
+
 .hero_text p{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
-    color:#203239;
+    color: #203239;
     width: 544px;
     margin-bottom: 56px;
 }
 
 .banner{
     display: flex;
-    padding-top:188px;
-    padding-bottom:120px;
+    padding-top: 188px;
+    padding-bottom: 120px;
     gap: 16px;
 }
+
 .search_box{
     display: flex;
     gap: 16px;
@@ -99,7 +117,6 @@ ul,ol{
     left: 20px;
     top: 49%;
     transform: translateY(-50%);
-
 }
 
 .search_box p{
@@ -109,11 +126,8 @@ ul,ol{
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
-    color:#203239;
+    color: #203239;
     border-radius: 15px;
-}
-.search_place{
-  
 }
 
 .search_box .search_button{
@@ -121,34 +135,37 @@ ul,ol{
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
-    color:#203239;
+    color: #203239;
     padding: 23px 41px;
     background: #FFFFFF;
     border-radius: 15px;
 }
-/* banner part end here */
+/* banner part ends here */
 
 
-/* card section part start here */
+/* card section part starts here */
 #card_section{
     margin-bottom: 30px;
 }
-.text_content h2{
+
+/* scoped to #card_section so it does not leak into other sections */
+#card_section .text_content h2{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 36px;
     line-height: 150%;
-    color:#203239;
+    color: #203239;
     padding-top: 100px;
     padding-bottom: 64px;
     width: 533px;
 }
+
 .upper_row{
     display: flex;
     align-items: center;
     position: relative;
-
 }
+
 .upper_row .orange{
     position: absolute;
     top: 17px;
@@ -160,29 +177,31 @@ ul,ol{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
     margin-top: 20px;
     width: 100px;
     margin-bottom: 8px;
 }
+
 .upper_row .text2{
     margin-left: 33px;
     margin-right: 132px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
     margin-top: 20px;
     width: 122px;
     margin-bottom: 8px;
 }
+
 .upper_row .text3{
     margin-left: 33px;
     margin-right: 84px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
     margin-top: 20px;
     width: 148px;
     margin-bottom: 8px;
@@ -192,9 +211,8 @@ ul,ol{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color:#FF7527;
+    color: #FF7527;
     margin-top: 20px;
-
 }
 
 .card_section{
@@ -203,152 +221,88 @@ ul,ol{
     gap: 140px;
     margin-bottom: 100px;
 }
-.card_one{
-    border-radius: 10px;
-}
 
-.card_one:hover{
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
-    transition: 0.4s;
-}
-
-.card_one .upper_row .number{
-    margin-right: 19px;
-}
-
-
-.card_one h4{
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-    color:#203239;
-    width: 235px;
-    margin-bottom: 48px;
-    margin-left: 33px;
-    width: 235px;
-}
-
-.card_one h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color:#203239;
-    margin-left: 33px;
-    margin-bottom: 20px;
-}
-
-.card_one h3 i{
-    margin-left: 8px;
-}
-
-.card_two{
-    border-radius: 10px;
-}
-
-.card_two:hover{
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
-    transition: 0.4s;
-}
-
-.card_two .upper_row .number{
-    margin-right: 19px;
-}
-
-
-.card_two h4{
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-    color:#203239;
-    width: 235px;
-    margin-bottom: 48px;
-    margin-left: 33px;
-    width: 235px;
-}
-
-.card_two h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color:#203239;
-    margin-left: 33px;
-    margin-bottom: 20px;
-}
-
-.card_two h3 i{
-    margin-left: 8px;
-}
-
+.card_one,
+.card_two,
 .card_three{
     border-radius: 10px;
 }
 
+.card_one:hover,
+.card_two:hover,
 .card_three:hover{
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
     transition: 0.4s;
 }
 
+.card_one .upper_row .number,
+.card_two .upper_row .number,
 .card_three .upper_row .number{
     margin-right: 19px;
 }
 
-
+.card_one h4,
+.card_two h4,
 .card_three h4{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
     width: 235px;
     margin-bottom: 48px;
     margin-left: 33px;
-    width: 235px;
 }
 
+.card_one h3,
+.card_two h3,
 .card_three h3{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
     margin-left: 33px;
     margin-bottom: 20px;
 }
 
+.card_one h3 i,
+.card_two h3 i,
 .card_three h3 i{
     margin-left: 8px;
 }
-/* card section part end here */
+/* card section part ends here */
 
 
-/* Residen Favorit part start here  */
+/* Residen Favorit part starts here */
 #Residen_Favorit{
-    background:#EEEDDE ;
+    background: #EEEDDE;
     padding-top: 68px;
 }
+
 .Pilihan_konsumen h4{
-    /* margin-bottom: 8px; */
     font-weight: 500;
     font-size: 16px;
-    color:#FF7527;
-    
+    color: #FF7527;
 }
+
 .Residen_Favorit h3{
     font-weight: 600;
     font-size: 36px;
-    color:#203239;
+    color: #203239;
     line-height: 80px;
     margin-bottom: 54px;
-}  
-
+}
 
 .content_parent{
     display: flex;
     flex-direction: row;
     gap: 260px;
 }
+
 .content_parent .left_content{
     display: flex;
     position: relative;
 }
+
 .content_parent .left_content .img2{
     position: absolute;
     top: 60px;
@@ -356,24 +310,24 @@ ul,ol{
 }
 
 .content_parent .left_content .img1{
-   padding-bottom: 163px;
-
+    padding-bottom: 163px;
 }
 
 .content_parent .right_content h2{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 36px;
-    color:#203239;
+    color: #203239;
     line-height: 150%;
     margin-bottom: 24px;
-    padding-top:44px ;
+    padding-top: 44px;
 }
+
 .content_parent .right_content p{
     font-family: "Poppins", sans-serif;
     font-weight: 350;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
     line-height: 30px;
     margin-bottom: 48px;
 }
@@ -383,23 +337,25 @@ ul,ol{
     flex-direction: row;
     gap: 48px;
 }
+
 .button_Residen_Favorit a i{
     margin-right: 12px;
     padding-left: 41px;
 }
 
 .button_Hubungi_Kami{
-    padding: 13px 41px 13px 0px;
+    padding: 13px 41px 13px 0;
     background: #203239;
     font-family: "Poppins", sans-serif;
     font-weight: 660;
     font-size: 16px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border-radius: 10px;
     border: 1px solid #203239;
     display: inline-flex;
     align-items: center;
 }
+
 .button_Hubungi_Kami:hover{
     border: 1px solid #203239;
     background: transparent;
@@ -408,44 +364,49 @@ ul,ol{
 }
 
 .button2_Hubungi_Kami{
-    padding: 13px 41px 13px 41px;
+    padding: 13px 41px;
     background: #203239;
     font-family: "Poppins", sans-serif;
     font-weight: 660;
     font-size: 16px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border-radius: 10px;
     border: 1px solid #203239;
     display: inline-flex;
     align-items: center;
 }
+
 .button2_Hubungi_Kami:hover{
     border: 1px solid #203239;
     background: transparent;
     color: #203239;
     transition: 0.4s;
 }
-/* Residen Favorit part end here  */
+/* Residen Favorit part ends here */
 
-/* Residen Berbagai Kota start here */
+
+/* Residen Berbagai Kota starts here */
 #Residen_Berbagai_Kota{
     padding-top: 68px;
 }
-.Residen_Berbagai_Kota_content p {
+
+.Residen_Berbagai_Kota_content p{
     padding-bottom: 8px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color:#FF7527;
+    color: #FF7527;
 }
-.Residen_Berbagai_Kota_content h2 {
+
+.Residen_Berbagai_Kota_content h2{
     padding-bottom: 64px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 36px;
-    color:#203239;
+    color: #203239;
 }
-.Residen_Berbagai_Kota_card_section {
+
+.Residen_Berbagai_Kota_card_section{
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -453,82 +414,128 @@ ul,ol{
 
 .Residen_Berbagai_Kota_card_section .child01 img,
 .Residen_Berbagai_Kota_card_section .child02 img,
-.Residen_Berbagai_Kota_card_section .child03 img
-{
+.Residen_Berbagai_Kota_card_section .child03 img{
     padding-bottom: 16px;
 }
 
-.Residen_Berbagai_Kota_card_section .child01 h2{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    color:#203239;
-    padding-bottom: 8px;
-}
-
-.Residen_Berbagai_Kota_card_section .child01 p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color:#203239;
-    line-height: 30px;
-    margin-bottom: 68px;
-}
-
+.Residen_Berbagai_Kota_card_section .child01 h2,
+.Residen_Berbagai_Kota_card_section .child02 h2,
 .Residen_Berbagai_Kota_card_section .child03 h2{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 24px;
-    color:#203239;
+    color: #203239;
     padding-bottom: 8px;
 }
 
+.Residen_Berbagai_Kota_card_section .child01 p,
+.Residen_Berbagai_Kota_card_section .child02 p,
 .Residen_Berbagai_Kota_card_section .child03 p{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color:#203239;
+    color: #203239;
     line-height: 30px;
     margin-bottom: 68px;
 }
+/* Residen Berbagai Kota ends here */
 
-.Residen_Berbagai_Kota_card_section .child02 h2{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    color:#203239;
-    padding-bottom: 8px;
+
+/* Hubungi Kami part starts here */
+#Hubungi_Kami{
+    padding: 48px 0;
+    background: #EEEDDE;
 }
 
-.Residen_Berbagai_Kota_card_section .child02 p{
+.hubungi_text h2{
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #203239;
+}
+
+.hubungi_text h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #000;
+    text-align: right;
+}
+
+.call_section {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;               
+}
+
+.call_section .call01 {
+    width: 274px;
+    height: 167px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call_section .call01 .upper_call_part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 29px;
+}
+
+.call_section .call01 .call01_left_part i {
+    font-size: 32px;
+    color: #1F313A;
+}
+
+.call_section .call01 .call01_right_part p {
+    margin: 0;
     font-size: 16px;
-    color:#203239;
-    line-height: 30px;
-    margin-bottom: 68px;
+    line-height: 1.6;
+    color: #1F313A;
 }
 
+.call_section .call01 .lower_call_part a {
+    display: inline-block;
+    padding: 10px 17px;
+    background-color: #1F313A;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+}
 
+.callLogoFlex{
+    display: flex;
+    position: relative;
+}
 
+.callLogoFlex .logo_section{
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+}
+/* Hubungi Kami part ends here */
 
-
-
-/* Residen Berbagai Kota end here */
-
-
-
-
-
-
-
-
-
-/* banner part start here */
-/* banner part end here */
-/* banner part start here */
-/* banner part end here */
-/* banner part start here */
-/* banner part end here */
-/* banner part start here */
-/* banner part end here */
+/* footer section start */
+#footer_part{
+    padding: 31px 0px;
+    background: #203239;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_content .social_media{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+ /* footer section end */
